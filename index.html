@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="..........................................................................." />
+	<meta name="description" content="........................................................................" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/icon1.png" />
+	<link rel="apple-touch-icon" type="image/x-icon" href="apple-touch-icon.png..............................." />
+	<title>CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+
+<body>
+	<div class="header">
+		<div class="logo"> 
+			<img src="images/logo8.ico" alt="" />
+		</div>
+		<div class="heading">
+			<h2>Simple calculator with assembly language.<br />Function and descriptions: </h2>
+		</div>
+		<div class="others"> 
+			  <a href="" data-toggle="modal" data-target=".other"><i class="fa fa-bars"></i></a>
+		</div>
+	
+	</div>
+	
+	
+	<div class="modal fade other" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Project Information</h4>
+				</div>
+				<div class="modal-body">
+					<img src="images/aiub.png" alt="" />
+					<p class="text-center text1">CSC2106:Computer Organization and Architecture(Section:G) <br />
+					Course Teacher: Mohammad Samawat Ullah</p>
+					<h4 class="text-center"><strong>Group 15</strong></h4>
+					<table class="table table-bordered table-responsive table-hover">
+						<tr>
+							<th>Group Members</th>
+							<th>ID</th>
+						</tr>
+						<tr>
+							<td>NAME 1</td>
+							<td>ID 1</td>
+						</tr>
+						<tr>
+							<td>NAME 2</td>
+							<td>ID 2</td>
+						</tr>
+						<tr>
+							<td>NAME 3</td>
+							<td>ID 3</td>
+						</tr>
+						
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+		</div>
+	
+	
+	
+	
+	
+	<img src="images/cal2.png" alt="" />
+	<p class= "lol"><font size=5">This calculator is based on a simple computer calculator which performs several tasks like addition,subtraction,multiplication and some other tasks.
+This is designed with assembly language.Functions of this calculator are given below with their proper description.
+</font>
+</p>
+	<div class="table-part">
+	<table class="table table-bordered table-responsive table-hover">
+		<tr>
+			<th bgcolor="#95B9C7">Function</th>
+			<th bgcolor="#95B9C7">Description</th>
+		</tr>
+		<tr>
+			<td bgcolor="#E5E4E2"><a href="" data-toggle="modal" data-target=".num1">Addition (+)</a></td>
+			<td bgcolor="#E5E4E2">The addition function add two numbers and show the result.</td>
+		</tr>
+		<tr>
+			<td bgcolor="#BCC6CC"><a href="" data-toggle="modal" data-target=".num2">Subtraction (-)</a></td>
+			<td bgcolor="#BCC6CC">The subtraction function subtract two numbers and show the result.If we subract a greater number from a lower number the result will be in negative</td>
+		</tr>
+		<tr>
+			<td bgcolor="#E5E4E2"><a href="" data-toggle="modal" data-target=".num3">Multiplication (*)</a></td>
+			<td bgcolor="#E5E4E2">The multiplication function multiply two numbers and show the result.</td>
+		</tr>
+		<tr>
+			<td bgcolor="#BCC6CC"><a href="" data-toggle="modal" data-target=".num4">Division (/)</a></td>
+			<td bgcolor="#BCC6CC">The division function divide the divident by the divisor and show the result.</td>
+		</tr>
+		<tr>
+			<td bgcolor="#E5E4E2"><a href="" data-toggle="modal" data-target=".num5">Mod (%)</a></td>
+			<td bgcolor="#E5E4E2">The Mod function will show the remainder after any divison.</td>
+		</tr>
+		<tr>
+			<td bgcolor="#BCC6CC"><a href="" data-toggle="modal" data-target=".num6">Square (^)</a></td>
+			<td bgcolor="#BCC6CC">The Square Function will square the number entered</td>
+		</tr>
+		
+	
+	</table>
+	
+	<div class="modal fade num1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Description of Addition</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+					<pre><font size="4">1.Take an input. Saved the value to a variable.
+2.Take another input.saved the value to a variable.
+3.Added the inputted value. Saved the value to a register AX.
+4.The outputproc was called.
+code:
+add_: 
+
+
+    ;second value stored in b
+    mov B,ax 
+    
+    lea dx,r
+    mov ah,9
+    int 21h
+    
+    xor ax,ax
+    
+    mov ax,B
+    add A,ax                   ;adding two numbers
+    
+    
+    mov ax,A
+    
+    cmp ax,32767
+    ja error3
+    
+    cmp ax,65535
+    ja error3
+    
+    push ax
+    
+    
+    jmp output</font>
+					</pre>
+					</p> 
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade num2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Description of subtraction</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+					<pre><font size="4">1.Take an input. Saved the value to a variable.
+2.Take another input.saved the value to a variable.
+3.Subtracted the inputted value. Saved the value to a register AX.
+4.The outputproc was called.
+
+code:
+sub_: 
+
+
+    ;second value stored in b
+    mov B,ax 
+    
+    lea dx,r
+    mov ah,9
+    int 21h
+    
+    
+    xor ax,ax
+    
+    mov ax,B
+    sub A,ax                    ;subtracting 
+    
+    
+    mov ax,A
+    
+    cmp ax,32767
+    ja error3
+    
+    cmp ax,65535
+    ja error3
+    
+    push ax
+    
+    jmp output</font>
+        
+					</pre>
+					</p> 
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade num3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Description of multiplication</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+					<pre><font size="4">1.Take an input. Saved the value to a variable.
+2.Take another input.saved the value to a variable.
+3.Multiplicated the inputted value. The value was automatically to AX.
+4.The outputproc was called.
+code:
+mul_: 
+
+
+    ;second value stored in b
+    mov B,ax 
+    
+    mov C,dx
+    
+    lea dx,r
+    mov ah,9
+    int 21h
+    
+    xor ax,ax             
+    xor dx,dx
+    
+    mov dx,C
+    
+    mov ax,B
+    
+    mul A                         ;multiplying
+    
+    cmp ax,32767
+    ja error3
+    
+    cmp ax,65535
+    ja error3
+    
+    push ax
+    push dx
+    
+    jmp output </font>
+       
+					</pre>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade num4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Description of division</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+					<pre><font size="4">1.Take an input. Saved the value to a variable.(Dividend)
+2.Take another input.saved the value to a variable.(Divisor)
+3.Divided the inputted value. Saved the value to a register AX.
+4.The outputproc was called.(quotient)
+code:
+div_: 
+
+
+    ;second value stored in b
+    
+    mov B,ax 
+    
+    mov C,dx
+    
+    lea dx,r
+    mov ah,9
+    int 21h
+    
+    xor ax,ax                            ;dividing
+    xor dx,dx
+    
+    mov dx,C
+    
+    mov ax,A
+    
+    div  B
+    
+    cmp ax,32767
+    ja error3
+    
+    cmp ax,65535
+    ja error3
+    
+    push ax
+    
+    
+    jmp output</font>
+     
+					</pre>
+					
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade num5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Description of mod</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+					<pre><font size="4">1.Take an input. Saved the value to a variable.(Dividend)
+2.Take another input.saved the value to a variable.(Divisor)
+3.Divided the values. The value was saved in DX.
+4.The outputproc was called. (Remainder)
+code:
+mod_: 
+
+
+    ;second value stored in b
+    
+    mov B,ax 
+    
+    mov C,dx
+    
+    lea dx,r
+    mov ah,9
+    int 21h
+    
+    xor ax,ax
+    xor dx,dx
+    
+    mov dx,C
+    
+    mov ax,A 
+     
+    div  B                         ;dividing
+    
+    cmp ax,32767
+    ja error3
+    
+    cmp ax,65535
+    ja error3
+    
+    push ax 
+    push dx
+    
+    
+    jmp output2    
+</font>
+       
+					
+					</pre>
+					
+					</p> 
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade num6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Description of Square</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+					<pre><font size="4">1.Take an input. Saved the value to a variable and also to register AX.
+2.Multiplied the variable and ax.
+3.The outputproc was called.
+code:
+sqr_:
+
+    lea dx,r
+    mov ah,9
+    int 21h
+    
+    
+    xor ax,ax
+    
+    mov ax,A
+    
+    mul A
+    
+    
+    cmp ax,32767
+    ja error3
+    
+    cmp ax,65535
+    ja error3
+    
+    push ax
+    
+    jmp output </font>
+      
+					</pre>
+					</p> 
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+      
+ </div>
+	
+	
+	
+	
+	
+</body>
+</html>

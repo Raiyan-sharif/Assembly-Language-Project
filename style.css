@@ -1,0 +1,111 @@
+/*
+Theme Name: project
+Theme URI: 
+Author: tamanna
+Version: 1.0
+Description: this is custom designed template.
+
+*/
+
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Header Area
+ * 13.0 - Footer
+ */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /** 
+ * Header Area 
+ **/
+body{
+	background: url('images/images.jpg') no-repeat 100% 100% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+html{ 
+  background: url('images/images.jpg') no-repeat 100% 100% fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: fixed;
+}
+
+ h2{
+	margin-top: 0;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	color: #A9FDFF;
+ }
+ .header{
+	background: rgba(0, 128, 128, 0.5);
+ }
+ .logo{
+	width: 12%;
+	float: left;
+ }
+ .heading{
+	width: 78%;
+	float: left;
+	overflow: hidden;
+ }
+ .others{
+	width: 10%;
+	overflow: hidden;
+	padding: 40px 0;
+ }
+ .others a{
+	color: white;
+	background: #1abc9c;
+	padding: 10px 25px;
+	border-radius: 10px;
+	font-size: 20px;
+ }
+ .logo img{
+	height: 80px;
+	width: 80px;
+	margin-top: 20px;
+ }
+ img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height:180px;
+	width:180px;
+	 
+ }
+ .lol{
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 5px 10px;
+	font-weight: bold;
+	font-size:16px;
+	color: #B7FEFD;
+	 background: rgba(0, 0, 0, 0.6);
+ }
+ .text1{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 30px;
+	background: rgba(0, 0, 0, 0.1)
+ }
+ 
+ .table-part{
+	margin: auto;
+	width: 95%;
+	
+	
+ }
